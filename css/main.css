@@ -1,0 +1,365 @@
+body,
+html {
+  font-family: 'Roboto', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: url(../img/footer-bg.png) no-repeat center bottom;
+  padding-bottom: 400px;
+}
+
+#header {
+  width: 100%;
+  background-color: transparent;
+  transition: background ease-out 0.2s;
+}
+
+#header.active {
+  position: fixed;
+  background: #fff;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+}
+
+#header .navbar-collapse {
+  width: auto;
+}
+
+#header .nav-link {
+  text-transform: uppercase;
+  font-weight: 500;
+  padding-left: 0;
+  padding-right: 0;
+  color: #000;
+}
+
+#header .nav-link:hover {
+  color: var(--secondary);
+}
+
+.underline {
+  position: relative;
+}
+
+.underline::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 4px;
+  background-color: var(--secondary);
+  transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .underline:hover::before {
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+}
+
+#girl {
+  max-width: 50%;
+  height: auto;
+}
+#slider {
+  background: url(../img/slider.svg) no-repeat center bottom;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#slider h1 {
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+#slider h4 {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+#services a.attribute {
+  display: block;
+  background: var(--light);
+  border-radius: 5px;
+  text-align: center;
+  padding: 20px;
+  color: #000;
+  text-decoration: none;
+  transition: all ease-out 0.2s;
+}
+
+#services a.attribute:hover {
+  background: #fff;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.12);
+  transform: scale(1.05);
+}
+
+#services {
+  margin-top: 5rem;
+}
+
+#services p {
+  color: var(--dark);
+}
+
+#services a.attribute .img-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+}
+
+#services a.attribute .img-container img {
+  max-height: 160px;
+}
+
+#services-icons {
+  width: auto;
+  height: 40%;
+}
+
+#skills a.link-skill {
+  padding: 0 15px;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px var(--light);
+  height: 100px;
+  transition: ease-out all 0.2s;
+}
+
+#skills a.link-skill:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.15);
+}
+
+#skills a.link-skill img {
+  filter: grayscale(100%);
+  max-height: 70px;
+  width: 100%;
+  opacity: 0.6;
+}
+
+#skills a.link-skill:hover img {
+  filter: none;
+  opacity: 1;
+}
+
+#skills .skill-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px;
+  background-color: var(--light);
+  border-radius: 5px;
+}
+
+#skills .skill-text .image {
+  padding: 60px 0;
+  display: flex;
+  align-items: center;
+  margin-left: -70px;
+  color: #b4b4b4;
+  font-size: 24px;
+  line-height: 26px;
+}
+
+#skills .skill-text .image span {
+  color: var(--secondary);
+  font-size: 110px;
+  line-height: 110px;
+  letter-spacing: -10px;
+  font-weight: 900;
+  display: block;
+}
+
+#skills .skill-text .phone {
+  display: flex;
+  font-size: 14px;
+  color: #b4b4b4;
+}
+
+#skills .skill-text .phone span {
+  font-size: 25px;
+  color: #797979;
+  font-weight: 900;
+  display: block;
+}
+
+#services .badge {
+  font-weight: 400;
+}
+
+#services .element-item img {
+  border-radius: 5px;
+  transition: all ease-out 0.2s;
+}
+
+#services .element-item img:hover {
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.4);
+}
+
+#services .button-group {
+  margin-bottom: 30px;
+}
+
+#services .button-group button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 700;
+  outline: none;
+}
+
+#services .button-group button + button {
+  margin-left: 30px;
+}
+
+#services .button-group button.active {
+  color: var(--primary);
+}
+
+#services-img {
+  width: 40%;
+  height: auto;
+}
+
+#blogs .blog {
+  background-color: var(--light);
+  border-radius: 5px;
+  display: flex;
+  padding: 30px;
+}
+
+#blogs .blog .quote {
+  max-width: 35px;
+}
+
+#blogs .blog .name {
+  color: #aaaaaa;
+}
+
+#blogs .blog .name span {
+  color: #000;
+  font-weight: 700;
+}
+
+#quotes {
+  margin-bottom: 10rem;
+}
+
+#quote-header {
+  color: var(--primary-dark);
+  font-weight: 900;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#quote {
+  font-weight: 700;
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#author {
+  color: var(--medium);
+  font-weight: 500;
+  font-size: 1.1rem;
+  text-align: center;
+}
+
+#quote-btn {
+  text-align: center;
+}
+
+#quote-header {
+  background-color: var(--primary-dark);
+  color: whitesmoke;
+  border-radius: 0%;
+}
+
+#card {
+  border-top: 2px solid var(--primary-dark);
+  border-bottom: 5px solid var(--primary-dark);
+  border-right: 5px solid var(--primary-dark);
+  border-left: 5px solid var(--primary-dark);
+}
+
+#contact .email {
+  border-radius: 5px;
+  background: url(../img/contact.svg) no-repeat center bottom;
+  background-attachment: fixed;
+  background-size: cover;
+  color: #fff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 120px 30px;
+}
+
+#contact .email img {
+  position: absolute;
+  left: 30px;
+  top: -30px;
+}
+
+#contact .email form {
+  width: 60%;
+  display: flex;
+}
+
+#contact .email .form-control,
+#contact .email .form-control::placeholder {
+  background: none;
+  color: #fff;
+}
+
+#contact ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+#contact ul li {
+  display: flex;
+  list-style-type: none;
+  margin-left: 25px;
+}
+
+#contact ul li:first-child {
+  margin-left: 0;
+}
+
+#contact ul li a {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+  transition: all ease-out 0.2s;
+}
+
+#contact ul li a:hover {
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.3);
+  background-color: var(--medium);
+}
+
+#contact ul li img {
+  max-height: 2.3rem;
+}
+
+#paper-plane {
+  margin-top: -3rem;
+}

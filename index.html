@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css" />
+
+  <link rel="stylesheet" href="css/owl/owl.carousel.min.css" />
+  <link rel="stylesheet" href="css/owl/owl.theme.default.min.css" />
+  <link rel="stylesheet" href="css/magnific-popup.css" />
+  <link rel="stylesheet" href="css/imports.css" />
+
+  <title>Portfolio Website</title>
+</head>
+
+<body>
+  <!--HEADER-->
+  <div id="header">
+    <div class="container">
+      <nav class="navbar navbar-expand-lg navbar-light justify-content-between">
+        <a class="navbar-brand" href="#"> <b>Logo</b> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active underline" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link underline" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link underline" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link underline" href="#contact">Contact</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link underline dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Others
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item underline" href="#services">My Services</a>
+                <a class="dropdown-item underline" href="#skills">Skills</a>
+                <a class="dropdown-item underline" href="#quotes">Quotes</a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  <!--//HEADER-->
+
+  <!--SLIDER-->
+  <div id="slider" class="block">
+    <div class="container pt-5">
+      <div class="row">
+        <div class="col-lg-4 col-md-6 align-self-center mb-md-0 mb-4">
+          <h1>Lorem ipsum dolor sit</h1>
+          <h4 class="mb-4">Lorem ipsum dolor sit amet, consectetur</h4>
+          <a href="#about" class="
+                button
+                btn btn-primary
+                button-primary
+                d-md-inline-block d-block
+                mb-md-0 mb-2
+                mr-md-2
+              ">Scroll Down</a>
+          <a href="#contact" class="
+                button
+                btn btn-outline-primary
+                button-primary-outline
+                d-md-inline-block d-block
+              ">Contact Me</a>
+        </div>
+        <div class="col-lg-8 col-md-6 align-self-center text-center">
+          <img src="img/girl.svg" class="img-fluid" id="girl" />
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--//SLIDER-->
+
+  <!--ABOUT-->
+  <div id="about" class="block">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 align-self-center text-center order-md-1 order-2">
+          <img src="img/about.svg" class="img-fluid" />
+        </div>
+        <div class="col-md-6 align-self-center order-md-2 order-1 mb-md-0 mb-4">
+          <h2 class="title">About me</h2>
+          <h4 class="subtitle">My indtroduction</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel
+            augue dapibus, ultrices ex non, pellentesque purus. Aliquam
+            scelerisque pretium est, eu commodo justo eleifend ac. Donec sit
+            amet massa fermentum, efficitur turpis at, dignissim ante.
+          </p>
+          <a class="btn btn-primary button button-primary" onclick="bootstrapAlert()" data-bs-toggle="tooltip"
+            data-bs-placement="top" title="Download my CV">Download CV</a>
+        </div>
+      </div>
+    </div>
+    <!--//ABOUT-->
+
+    <!--MY SERVICES-->
+    <div id="services" class="block">
+      <div class="container">
+        <h2 class="title text-center">My Services</h2>
+        <h4 class="subtitle text-center mb-4">What I offer</h4>
+
+        <!--Modal 1-->
+        <div class="row">
+          <div class="col-12">
+            <div class="modal fade" id="EpicModal" tabindex="-1" aria-labelledby="EpicModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered" id="modalDialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="EpicModalLabel">Design</h5>
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+
+                  <div class="modal-body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                  </div>
+
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Modal 2-->
+        <div class="row">
+          <div class="col-12">
+            <div class="modal fade" id="EpicModal2" tabindex="-1" aria-labelledby="EpicModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered" id="modalDialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="EpicModalLabel">Frontend</h5>
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+
+                  <div class="modal-body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                  </div>
+
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Modal 3-->
+        <div class="row">
+          <div class="col-12">
+            <div class="modal fade" id="EpicModal3" tabindex="-1" aria-labelledby="EpicModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered" id="modalDialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="EpicModalLabel">Backend</h5>
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+
+                  <div class="modal-body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                  </div>
+
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!--Modal 4-->
+        <div class="row">
+          <div class="col-12">
+            <div class="modal fade" id="EpicModal4" tabindex="-1" aria-labelledby="EpicModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg modal-dialog-centered" id="modalDialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="EpicModalLabel">App</h5>
+
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+
+                  <div class="modal-body">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                    Duis aute irure dolor in reprehenderit in voluptate velit
+                    esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+                    occaecat cupidatat non proident, sunt in culpa qui officia
+                    deserunt mollit anim id est laborum.
+                  </div>
+
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                      Close
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
+            <a type="button" class="attribute" data-toggle="modal" data-target="#EpicModal" data-bs-placement="top"
+              title="Open">
+              <div class="img-container mb-3">
+                <img src="img/services/s1.svg" class="img-fluid" id="services-icons" />
+              </div>
+              <h5 class="text-uppercase">Design</h5>
+              <p class="mb-0">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus dignissim tempus.
+              </p>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
+            <a type="button" class="attribute" data-toggle="modal" data-target="#EpicModal2" data-bs-placement="top"
+              title="Open">
+              <div class="img-container mb-3">
+                <img src="img/services/s2.svg" class="img-fluid" id="services-icons" />
+              </div>
+              <h5 class="text-uppercase">Frontend</h5>
+              <p class="mb-0">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus dignissim tempus.
+              </p>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
+            <a type="button" class="attribute" data-toggle="modal" data-target="#EpicModal3" data-bs-placement="top"
+              title="Open">
+              <div class="img-container mb-3">
+                <img src="img/services/s3.svg" class="img-fluid" id="services-icons" />
+              </div>
+              <h5 class="text-uppercase">Backend</h5>
+              <p class="mb-0">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus dignissim tempus.
+              </p>
+            </a>
+          </div>
+          <div class="col-lg-3 col-md-6 mb-lg-0 mb-4">
+            <a type="button" class="attribute" data-toggle="modal" data-target="#EpicModal4" data-bs-placement="top"
+              title="Open">
+              <div class="img-container mb-3">
+                <img src="img/services/s4.svg" class="img-fluid" id="services-icons" />
+              </div>
+              <h5 class="text-uppercase">App</h5>
+              <p class="mb-0">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Phasellus dignissim tempus.
+              </p>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--//MY SERVICES-->
+
+    <!--SKILLS-->
+    <div id="skills" class="block">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 align-self-center">
+            <div class="row">
+              <div class="col-sm-4 col-6 mb-4">
+                <a class="link-skill">
+                  <img src="img/skills/s1.svg" class="img-fluid" />
+                </a>
+              </div>
+              <div class="col-sm-4 col-6 mb-4">
+                <a class="link-skill">
+                  <img src="img/skills/s2.svg" class="img-fluid" />
+                </a>
+              </div>
+              <div class="col-sm-4 col-6 mb-4">
+                <a class="link-skill">
+                  <img src="img/skills/s3.svg" class="img-fluid" />
+                </a>
+              </div>
+              <div class="col-sm-4 col-6 mb-4">
+                <a class="link-skill">
+                  <img src="img/skills/s4.svg" class="img-fluid" />
+                </a>
+              </div>
+              <div class="col-sm-4 col-6 mb-4">
+                <a class="link-skill">
+                  <img src="img/skills/s5.svg" class="img-fluid" />
+                </a>
+              </div>
+              <div class="col-sm-4 col-6 mb-4">
+                <a class="link-skill">
+                  <img src="img/skills/s6.svg" class="img-fluid" />
+                </a>
+              </div>
+              <div class="col-sm-4 col-6 mb-4">
+                <a class="link-skill">
+                  <img src="img/skills/s7.svg" class="img-fluid" />
+                </a>
+              </div>
+              <div class="col-sm-4 col-6 mb-4">
+                <a class="link-skill">
+                  <img src="img/skills/s8.svg" class="img-fluid" />
+                </a>
+              </div>
+              <div class="col-sm-4 col-6 mb-4">
+                <a class="link-skill">
+                  <img src="img/skills/s9.svg" class="img-fluid" />
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 align-self-center">
+            <div class="skill-text ml-5">
+              <div class="image">
+                <img src="img/services.svg" id="services-img" />
+                <div class="d-inline-block pl-md-0 pl-3">
+                  <span>1+</span>
+                  Years experience
+                </div>
+              </div>
+              <div class="phone">
+                <img src="./img/phone.svg" />
+                <div class="d-inline-block pl-3">
+                  <p>
+                    <button class="badge btn rounded-pill btn-info text-dark" type="button" data-toggle="collapse"
+                      data-target="#EpicCollapse" aria-expanded="false" aria-controls="EpicCollapse">
+                      Phone Number
+                    </button>
+                  </p>
+                  <div class="collapse" id="EpicCollapse">
+                    <div class="card card-body">
+                      <span>(+355) 123 456 7890</span>
+                    </div>
+                  </div>
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-12">
+
+                      </div>
+                    </div>
+                  </div>
+                  <h6>20 Years Old</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--//SKILLS-->
+
+    <!--PORTFOLIO-->
+    <div id="portfolio"></div>
+    <div id="services" class="block">
+      <div class="container">
+        <h2 class="title text-center">Portfolio</h2>
+        <h4 class="subtitle text-center mb-4">Most recent work</h4>
+
+        <div class="button-group" id="portfolio-btns">
+          <button type="button" class="active" data-filter="*" id="btn-all">
+            All
+          </button>
+          <button type="button" data-filter=".website">Frontend</button>
+          <button type="button" data-filter=".email">Backend</button>
+          <button type="button" data-filter=".apps">Apps</button>
+          <button type="button" data-filter=".graphics">Graphics</button>
+        </div>
+
+        <div class="row grid">
+          <div class="col-lg-4 col-6 mb-4 element-item website apps">
+            <a href="img/portfolio/1.jpg" class="popup-link">
+              <img src="img/portfolio/1.jpg" class="img-fluid mb-2" />
+            </a>
+            <h5 class="text-uppercase mb-1">Lorem ipsun</h5>
+            <p class="mb-0">
+              <span class="badge bg-light text-dark">Website</span>
+              <span class="badge bg-light text-dark">Apps</span>
+            </p>
+          </div>
+          <div class="col-lg-4 col-6 mb-4 element-item email">
+            <a href="img/portfolio/2.jpg" class="popup-link">
+              <img src="img/portfolio/2.jpg" class="img-fluid mb-2" />
+            </a>
+            <h5 class="text-uppercase">Lorem ipsun</h5>
+            <p class="mb-0 tags">
+              <span class="badge bg-light text-dark">Email</span>
+            </p>
+          </div>
+          <div class="col-lg-4 col-6 mb-4 element-item apps">
+            <a href="img/portfolio/3.jpg" class="popup-link">
+              <img src="img/portfolio/3.jpg" class="img-fluid mb-2" />
+            </a>
+            <h5 class="text-uppercase">Lorem ipsun</h5>
+            <p class="mb-0 tags">
+              <span class="badge bg-light text-dark">Apps</span>
+            </p>
+          </div>
+          <div class="col-lg-4 col-6 mb-4 element-item apps">
+            <a href="img/portfolio/4.jpg" class="popup-link">
+              <img src="img/portfolio/4.jpg" class="img-fluid mb-2" />
+            </a>
+            <h5 class="text-uppercase">Lorem ipsun</h5>
+            <p class="mb-0 tags">
+              <span class="badge bg-light text-dark">Apps</span>
+            </p>
+          </div>
+          <div class="col-lg-4 col-6 mb-4 element-item email">
+            <a href="img/portfolio/5.jpg" class="popup-link">
+              <img src="img/portfolio/5.jpg" class="img-fluid mb-2" />
+            </a>
+            <h5 class="text-uppercase">Lorem ipsun</h5>
+            <p class="mb-0 tags">
+              <span class="badge bg-light text-dark">Email</span>
+            </p>
+          </div>
+          <div class="col-lg-4 col-6 mb-4 element-item apps graphics">
+            <a href="img/portfolio/6.jpg" class="popup-link">
+              <img src="img/portfolio/6.jpg" class="img-fluid mb-2" />
+            </a>
+            <h5 class="text-uppercase">Lorem ipsun</h5>
+            <p class="mb-0 tags">
+              <span class="badge bg-light text-dark">Gráficos</span>
+              <span class="badge bg-light text-dark">Apps</span>
+            </p>
+          </div>
+          <div class="col-lg-4 col-6 mb-4 element-item website">
+            <a href="img/portfolio/7.jpg" class="popup-link">
+              <img src="img/portfolio/7.jpg" class="img-fluid mb-2" />
+            </a>
+            <h5 class="text-uppercase">Lorem ipsun</h5>
+            <p class="mb-0 tags">
+              <span class="badge bg-light text-dark">Website</span>
+            </p>
+          </div>
+          <div class="col-lg-4 col-6 mb-4 element-item email">
+            <a href="img/portfolio/8.jpg" class="popup-link">
+              <img src="img/portfolio/8.jpg" class="img-fluid mb-2" />
+            </a>
+            <h5 class="text-uppercase">Lorem ipsun</h5>
+            <p class="mb-0 tags">
+              <span class="badge bg-light text-dark">Email</span>
+            </p>
+          </div>
+          <div class="col-lg-4 col-6 mb-4 element-item graphics">
+            <a href="img/portfolio/9.jpg" class="popup-link">
+              <img src="img/portfolio/9.jpg" class="img-fluid mb-2" />
+            </a>
+            <h5 class="text-uppercase">Lorem ipsn</h5>
+            <p class="mb-0 tags">
+              <span class="badge bg-light text-dark">Graphics</span>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--//PORTFOLIO-->
+
+    <!--BLOGS-->
+    <div id="blogs" class="block">
+      <div class="container">
+        <h2 class="title text-center">Blogs</h2>
+        <h4 class="subtitle text-center mb-4">Recent Blogs</h4>
+
+        <div class="owl-carousel owl-theme owl-loaded">
+          <div>
+            <div class="blog">
+              <img src="img/img.svg" />
+              <div class="blog-text pl-3">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Mauris vehicula bibendum massa ac eleifend. Aenean id
+                  venenatis lectus. Donec congue at metus eget consequat. Duis
+                  ullamcorper sagittis.
+                </p>
+                <p class="name"><span>Title</span> / Description</p>
+                <p class="mb-0">
+                  <img src="img/quote.png" class="quote float-right" />
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="blog">
+              <img src="img/img.svg" />
+              <div class="blog-text pl-3">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Mauris vehicula bibendum massa ac eleifend. Aenean id
+                  venenatis lectus. Donec congue at metus eget consequat. Duis
+                  ullamcorper sagittis.
+                </p>
+                <p class="name"><span>Title</span> / Description</p>
+                <p class="mb-0">
+                  <img src="img/quote.png" class="quote float-right" />
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="blog">
+              <img src="img/img.svg" />
+              <div class="blog-text pl-3">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Mauris vehicula bibendum massa ac eleifend. Aenean id
+                  venenatis lectus. Donec congue at metus eget consequat. Duis
+                  ullamcorper sagittis.
+                </p>
+                <p class="name"><span>Title</span> / Description</p>
+                <p class="mb-0">
+                  <img src="img/quote.png" class="quote float-right" />
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="blog">
+              <img src="img/img.svg" />
+              <div class="blog-text pl-3">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Mauris vehicula bibendum massa ac eleifend. Aenean id
+                  venenatis lectus. Donec congue at metus eget consequat. Duis
+                  ullamcorper sagittis.
+                </p>
+                <p class="name"><span>Title</span> / Description</p>
+                <p class="mb-0">
+                  <img src="img/quote.png" class="quote float-right" />
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="blog">
+              <img src="img/img.svg" />
+              <div class="blog-text pl-3">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Mauris vehicula bibendum massa ac eleifend. Aenean id
+                  venenatis lectus. Donec congue at metus eget consequat. Duis
+                  ullamcorper sagittis.
+                </p>
+                <p class="name"><span>Title</span> / Description</p>
+                <p class="mb-0">
+                  <img src="img/quote.png" class="quote float-right" />
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="blog">
+              <img src="img/img.svg" />
+              <div class="blog-text pl-3">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Mauris vehicula bibendum massa ac eleifend. Aenean id
+                  venenatis lectus. Donec congue at metus eget consequat. Duis
+                  ullamcorper sagittis.
+                </p>
+                <p class="name"><span>Title</span> / Description</p>
+                <p class="mb-0">
+                  <img src="img/quote.png" class="quote float-right" />
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--//BLOGS-->
+
+    <!--QUOTES-->
+    <div class="container" id="quotes">
+      <div class="card" id="card">
+        <h5 class="card-header" id="quote-header">Quotes</h5>
+        <div class="card-body">
+          <h5 class="card-title" id="quote">"Quotes goes here..."</h5>
+          <p class="card-text" id="author">Author</p>
+
+          <div class="buttons" id="quote-btn">
+            <span class="span"><a class="a"></a></span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--//QUOTES-->
+
+    <!--FOOTER-->
+    <footer id="contact">
+      <div class="container">
+        <div class="email">
+          <img src="https://img.icons8.com/plasticine/200/000000/paper-plane.png" id="paper-plane" />
+          <h2 class="title text-center">Contact Me</h2>
+          <h4 class="subtitle contact text-center mb-4">Get in touch</h4>
+
+          <form class="row g-3">
+            <div class="col-lg-6 col-12 mb-4">
+              <label for="validationDefault01" class="form-label">Name</label>
+              <input type="text" class="form-control" id="validationDefault01" required>
+            </div>
+            <div class="col-lg-6 col-12 mb-4">
+              <label for="validationDefaultEmail" class="form-label">Email</label>
+              <div class="input-group">
+                <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                <input type="email" class="form-control" id="validationDefaultEmail"
+                  aria-describedby="inputGroupPrepend2" required>
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label" id="contactMessage">Message</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="5" required></textarea>
+            </div>
+            <div class="col-12">
+              <button class="btn btn-light button mb-3 d-md-inline d-block w-100" type="submit">Send</button>
+            </div>
+          </form>
+
+        </div>
+        <div class="logo py-4">
+          <div class="row">
+            <div class="col-md-6 align-self-center text-md-left text-center">
+              <a class="navbar-brand" href="#"> <b>Logo</b> </a>
+            </div>
+            <div id="links" class="col-md-6 align-self-center text-right">
+              <ul>
+                <li class="facebook">
+                  <a href="#">
+                    <img src="./img/footer/facebook.svg" alt="" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                      title="Facebook" />
+                  </a>
+                </li>
+                <li class="instagram">
+                  <a href="#">
+                    <img src="./img/footer/instagram.svg" alt="" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                      title="Instagram" />
+                  </a>
+                </li>
+                <li class="twitter">
+                  <a href="#">
+                    <img src="./img/footer/twitter.svg" alt="" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                      title="Twitter" />
+                  </a>
+                </li>
+                <li class="linkedin">
+                  <a href="">
+                    <img src="./img/footer/linkedin.svg" alt="" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                      title="Linkedin" />
+                  </a>
+                </li>
+                <li class="github">
+                  <a href="#">
+                    <img src="./img/footer/github.svg" alt="" data-bs-toggle="tooltip" data-bs-placement="bottom"
+                      title="Github" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--//FOOTER-->
+
+    <!--==================== SCROLL TOP ====================-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="uil uil-angle-up scrollup__icon"></i>
+    </a>
+
+
+    <!--JS-->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"></script>
+
+    <script src="js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/isotope.pkgd.min.js"></script>
+    <script src="js/magnify/jquery.magnific-popup.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/growl/jquery.bootstrap-growl.min.js"></script>
+    <script src="js/api.js"></script>
+</body>
+
+</html>

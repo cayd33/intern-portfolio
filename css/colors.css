@@ -1,0 +1,13 @@
+:root {
+  --primary: #d94496;
+  --primary-dark: #df5286;
+  --secondary: #de3163;
+  --light: #f0f0f0;
+  --medium: #c78fabe1;
+  --dark: #a2a2a2;
+  --scroll-bar-color: hsl(255, 15%, 90%);
+  --scroll-thumb-color: hsl(320, 27%, 71%);
+  --text-color-light: hsl(320, 15%, 65%);
+  --first-color: hsl(320, 27%, 51%);
+  --first-color-alt: hsl(320, 15%, 43%);
+}
